@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Form</title>
+<style>
+    html, body {
+         display:flex;
+        justify-content: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        background-color: rgb(161, 214, 235);
+    }
+    form{
+        border: 1px solid black;
+        width: 35%;
+        height: 95%;
+        background-color:rgb(249, 249, 250);
+    }
+     .formcontainer{
+        text-align: left;
+        margin: 20px 40px 12px;
+        color:darkgrey
+    }
+    .textinp
+    {
+        width: 100%;
+        padding: 16px;
+        margin: 8px 0;
+        display:inline-block;
+        border:1px solid rgb(59, 176, 223);
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    h1{
+     text-align:center;
+     font-size: 30px;
+     color: rgb(7, 155, 214);
+     font-style:inherit;
+    }
+    button{
+        background-color: rgb(44, 112, 240);
+        color:white;
+        padding: 14px 0;
+        margin:auto;
+        border: none;
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 20px; 
+    }
+    .container{
+        padding: 16px;
+        text-align: center;
+    }
+
+</style>
+</head>
+<body>
+<form action="/action_page.php">
+<h1>Contact Us</h1>
+<div class="formcontainer">
+<hr />
+<div class="container"></div>
+<label for="Full Name"></label>
+<input type="text"
+placeholder="Full Name"
+name="Full Name"
+id="Full Name"
+class="textinp"/>
+<label for="Email"></label>
+<input type="Email"name="Email" id="Email"placeholder="Email"class="textinp"/>
+<label for="Phone Number"></label>
+<input type="Phone Number"name="Phone Number"placeholder="Phone Number"class="textinp"/>
+<label for="Website"></label>
+<input type="Website"name="Website"id="Website"placeholder="Website"class="textinp"/>
+<label for="text1"><strong>Message</strong></label>
+<textarea id="text1"name="Message"rows="3"columns="100"class="textinp" /></textarea>
+<br> </br>
+<button type="Submit">Submit</button>
+</div>
+</form>
+</body>
+</html>
